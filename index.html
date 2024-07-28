@@ -28,22 +28,27 @@
     </a>
 
     <nav class="menu">
+      <input type="checkbox" id="menu-hamburguer">
+
+      <label for="menu-hamburguer">
+        <div class="menu">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+
       <ul>
         <li>
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
           <a href="#projetos">Meus projetos</a>
         </li>
       </ul>
     </nav>
   </header>
+
   <section class="home">
     <div class="informacoes">
-      <h1>Olá! Sou Gustavo Silva</h1>
-      <p>Um desenvolvedor frontend em formação apaixonado por tecnologia.</p>
-      <p>
-        Estou sempre me desafiando com novos projetos e buscando feedback na
-        comunidade de programação, além de compartilhar meus conhecimentos. 😁
-      </p>
-      <p>Ah, também sou fã de jogos, filmes, séries e animes. 💜</p>
+      <h1>Gustavo Silva Frontend Developer</h1>
 
       <ul class="redes-sociais">
         <li>
@@ -68,22 +73,48 @@
 
     <div class="container-foto">
       <div class="foto sombra-interna">
-        <img src="./src/imagens/foto de perfil.png" alt="foto do portfólio do Gustavo">
+        <img src="./src/imagens/foto de perfil 2.png" alt="foto do portfólio do Gustavo">
       </div>
     </div>
   </section>
+
+  <section class="sobre" id="sobre">
+    <h2>Sobre</h2>
+    <p>Um desenvolvedor frontend em formação apaixonado por tecnologia.</p>
+    <p>
+      Estou sempre me desafiando com novos projetos e buscando feedback na
+      comunidade de programação, além de compartilhar meus conhecimentos. 😁
+    </p>
+    <p>Também sou fã de jogos, filmes, séries e animes. 💜</p>
+    <p>Então decidi esse ano dar início aos meus estudos de programação. Atualmente estou fazendo um curso de
+      desenvolvimento web Full-Stack.</p>
+    <p>Estou enfrentando várias dificuldades mas sei que isso faz parte da aprendizagem, como qualquer outra coisa na
+      vida com muito foco e determinação conquistarei o meu sonho.</p>
+  </section>
+
+  <section class="habilidades" id="habilidades">
+    <h2>Habilidades</h2>
+    <ul class="tecnologias-icones">
+      <li><i class="fa-brands fa-html5" title='HTML5'></i></li>
+      <li><i class="fa-brands fa-css3-alt" title="CSS3"></i></li>
+      <li><i class="fa-brands fa-js" title="JavaScript"></i></li>
+      <li><i class="devicon-git-plain" title="Git"></i></li>
+      <li><i class="fa-brands fa-github" title="GitHub"></i></li>
+    </ul>
+  </section>
+
   <section class="projetos" id="projetos">
     <h2 class="titulo">Meus projetos</h2>
 
     <div class="container-projetos">
       <div class="projeto ativo">
-        <a href="https://github.com/devemdobro/projeto-gta" target="_blank">
-          <img src="./src/imagens/projeto-gta.png" alt="Projeto Landing page GTA" />
-          <h3>Projeto 1</h3>
+        <a href="https://github.com/gustavo-gsilva/landing-page-com-grid" target="_blank">
+          <img src="./src/imagens/landing page de agência.gif" alt="Projeto Landing page de Agência" />
+          <h3>Landing Page de Agência</h3>
 
           <div class="informacoes-projeto">
-            <p>Projeto feito usando HTML, CSS e JavaScript</p>
-            <p>🔗 Ver no GitHub Pages</p>
+            <p>Projeto feito usando HTML e CSS</p>
+            <p>🔗 Ver no Vercel</p>
           </div>
         </a>
       </div>
@@ -168,6 +199,8 @@
 
     <button class="btn-mostrar-projetos">Mostrar mais</button>
   </section>
+
+  <script src="https://kit.fontawesome.com/9707c16123.js" crossorigin="anonymous"></script>
 
   <script src="./src/css/js/index.js"></script>
 

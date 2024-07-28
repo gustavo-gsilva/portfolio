@@ -39,12 +39,16 @@ body {
     border: 2px solid #1016b4;
 }
 
-
+.cabecalho .menu input {
+    display: none;
+    width: 70px;
+    height: 70px;
+}
 
 .cabecalho .menu li a {
     font-size: 20px;
     text-transform: capitalize;
-    padding: 10px 20px;
+    padding: 10px 30px;
     transition: 0.2s;
 }
 
@@ -77,17 +81,9 @@ body {
     margin-bottom: 20px;
 }
 
-.home .informacoes p {
-    font-family: "Raleway",
-        sans-serif;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 .home .redes-sociais {
     display: flex;
     gap: 20px;
-
 }
 
 .home .redes-sociais a i {
@@ -95,7 +91,7 @@ body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    padding: 10px;
+    padding: 11px 11px;
     text-align: center;
     font-size: 26px;
     transition: 0.3s;
@@ -121,6 +117,37 @@ body {
     background: linear-gradient(0.25turn, #090505, #132356, #05125bf7);
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
+}
+
+.sobre h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 500;
+    padding: 30px 0;
+}
+
+.sobre p {
+    font-family: "Raleway",
+        sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px 235px;
+}
+
+.habilidades h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 500;
+    padding: 40px 0;
+}
+
+.habilidades .tecnologias-icones {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    font-size: 50px;
 }
 
 .projetos {
