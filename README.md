@@ -5,7 +5,7 @@ Nesse portfólio tem um menu de navegação com um scroll automático ao clicar 
 
 [<img src="./src/animação.gif" alt="gif do desktop">](https://portfolio-7r5u5m2n9-gustavo-silvas-projects-ee807f68.vercel.app/)
 
-[<img src="./src/animação responsive.gif" alt="gif do responsive">](https://portfolio-7r5u5m2n9-gustavo-silvas-projects-ee807f68.vercel.app/)
+[ <img src="./src/animação responsive.gif" alt="gif do responsive">](https://portfolio-7r5u5m2n9-gustavo-silvas-projects-ee807f68.vercel.app/)
 
 
 
