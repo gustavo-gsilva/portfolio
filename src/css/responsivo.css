@@ -1,37 +1,86 @@
-@media(max-width: 1280px) {
+@media (max-width: 1170px) {
 
-    .cabecalho {
-        padding: 30px;
+    .secao-sobre h2,
+    .habilidades h2,
+    .projetos h2,
+    .secao-contato h2 {
+        max-width: 980px;
     }
 
-    .home {
+}
+
+@media (max-width: 1070px) {
+
+    .secao-sobre h2,
+    .habilidades h2,
+    .projetos h2,
+    .secao-contato h2 {
+        max-width: 900px;
+    }
+
+    .cabecalho .logo {
+        margin-right: 0px;
+    }
+
+    .sobre .container-foto .foto {
+        max-width: 370px;
+    }
+
+    .sobre .texto {
+        width: 50%;
+        font-size: 2.3rem;
+    }
+
+}
+
+@media (max-width: 990px) {
+
+    .secao-sobre h2,
+    .habilidades h2,
+    .projetos h2,
+    .secao-contato h2 {
+        max-width: 750px;
+    }
+
+    .home a {
+        left: 93%;
+    }
+
+}
+
+@media (max-width: 895px) {
+
+    .sobre {
         flex-direction: column;
-        align-items: center;
-        margin: 50px;
-        gap: 30px;
     }
 
-    .home .informacoes {
-        max-width: 100%;
+    .sobre .texto {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 805px) {
+
+    .secao-sobre h2,
+    .habilidades h2,
+    .projetos h2,
+    .secao-contato h2 {
+        max-width: 600px;
+    }
+
+    .home .informacoes h2 {
         text-align: center;
-        align-items: center;
-    }
-
-    .projetos .container-projetos {
-        padding: 0 30px;
+        font-size: 4.3rem;
     }
 
 }
 
-@media (max-width: 950px) {
+@media (max-width: 760px) {
 
-    .sobre p {
-        padding: 10px 130px;
+    .cabecalho .logo {
+        margin-right: 500px;
     }
-
-}
-
-@media(max-width: 660px) {
 
     .cabecalho .menu {
         align-self: flex-end;
@@ -43,7 +92,7 @@
     }
 
     .cabecalho .hamburguer {
-        background-color: #000;
+        background-color: var(--secondary-color);
         position: relative;
         display: block;
         width: 30px;
@@ -55,7 +104,7 @@
 
     .cabecalho .hamburguer:before,
     .cabecalho .hamburguer:after {
-        background-color: #000;
+        background-color: var(--secondary-color);
         content: "";
         display: block;
         width: 100%;
@@ -88,7 +137,7 @@
 
     .cabecalho nav ul {
         display: none;
-        margin: 20px;
+        margin: 40px 0;
     }
 
     .cabecalho nav li a {
@@ -108,7 +157,7 @@
 
     .cabecalho nav ul {
         width: 200px;
-        background-color: #111476;
+        background-color: var(--primary-color);
         padding: 15px;
     }
 
@@ -118,41 +167,211 @@
         display: block;
     }
 
-    .sobre p {
-        padding: 10px 60px;
+    .home a {
+        left: 91%;
     }
 
-    .habilidades {
-        padding: 50px 0;
+}
+
+@media (max-width: 650px) {
+
+    .secao-sobre h2,
+    .habilidades h2,
+    .projetos h2,
+    .secao-contato h2 {
+        max-width: 480px;
     }
+
+}
+
+@media (max-width: 590px) {
+
+    .cabecalho .logo {
+        margin-right: 380px;
+    }
+
+    .home a {
+        left: 89%;
+    }
+
+    .sobre .container-foto .foto {
+        max-width: 380px;
+    }
+
+    .sobre .texto {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .projetos .projeto {
+        width: 480px;
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .secao-sobre h2,
+    .habilidades h2,
+    .projetos h2,
+    .secao-contato h2 {
+        max-width: 350px;
+    }
+
+    .projetos .projeto {
+        width: 390px;
+        max-height: 300px;
+    }
+
+    .projetos .projeto .informacoes-projeto {
+        padding-top: 20px;
+    }
+
+    .projetos .projeto .informacoes-projeto .tecnologias-projeto {
+        gap: 50px;
+    }
+
+    .projetos .projeto .tecnologias-projeto span i {
+        font-size: 4rem;
+    }
+
+    .projetos .projeto .informacoes-projeto .ver-projeto {
+        padding-top: 40px;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    .cabecalho .logo {
+        margin-right: 290px;
+    }
+
+    .home .informacoes h1 {
+        font-size: 4rem;
+    }
+
+    .home .informacoes h2 {
+        font-size: 3.3rem;
+    }
+
+    .home a {
+        left: 87%;
+    }
+
+    .secao-contato .container-contato {
+        width: 350px;
+        height: 450px;
+    }
+
+    .secao-contato .container-contato #nome,
+    .secao-contato .container-contato #email {
+        width: 250px;
+        height: 35px;
+    }
+
+    .secao-contato .container-contato #mensagem {
+        max-width: 250px;
+        min-height: 140px;
+    }
+
+    .secao-contato .container-contato button {
+        width: 250px;
+        padding: 12px;
+    }
+
 
 }
 
 @media(max-width: 425px) {
 
+    .secao-sobre h2,
+    .habilidades h2,
+    .projetos h2,
+    .secao-contato h2 {
+        max-width: 300px;
+    }
+
+    .cabecalho nav ul {
+        height: 200px;
+    }
+
+    .cabecalho .menu li a {
+        font-size: 1.8rem;
+        padding: 8px 35px;
+    }
+
     .home .informacoes h1 {
-        font-size: 30px;
+        font-size: 3.5rem;
     }
 
-    .home .informacoes p {
-        font-size: 16px;
+    .home .informacoes h2 {
+        font-size: 2.7rem;
     }
 
-    .home .container-foto img {
-        max-width: 320px;
+    .home a {
+        left: 85%;
     }
 
-    .sobre p {
-        padding: 10px 50px;
+    .sobre {
+        padding: 100px 0 100px 0;
     }
 
-    .habilidades .tecnologias-icones {
-        font-size: 40px;
-        gap: 30px;
+    .sobre .container-foto .foto {
+        max-width: 310px;
     }
 
     .projetos {
-        padding: 30px;
+        padding: 100px 0 100px 0;
+    }
+
+    .projetos .projeto {
+        width: 350px;
+        max-height: 310px;
+    }
+
+    .projetos .projeto .informacoes-projeto .tecnologias-projeto {
+        gap: 35px;
+    }
+
+    .projetos .projeto .tecnologias-projeto span i {
+        font-size: 3.5rem;
+    }
+
+    .projetos .projeto .tecnologias-projeto p {
+        font-size: 1.4rem;
+    }
+
+    .projetos .projeto .tecnologias-projeto .nome-das-tecnologias .logo-api {
+        width: 47px;
+    }
+
+    .secao-rodape .redes-sociais a i {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 2.8rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .cabecalho .logo {
+        margin-right: 250px;
+    }
+
+    .home .informacoes h1 {
+        font-size: 3.2rem;
+    }
+
+    .home .informacoes h2 {
+        font-size: 2.6rem;
+    }
+
+    .sobre .texto {
+        width: 85%;
+        font-size: 1.7rem;
     }
 
 }
