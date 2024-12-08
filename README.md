@@ -1,7 +1,14 @@
-# Repositório-Meu-Portfólio
-Olá seja bem vindo! ao repositório Meu Portfólio, esse aqui como vocês podem ver é o meu portfólio sempre estarei adicionando novos projetos.
+# Repositório Meu Portfólio
 
-Nesse portfólio tem um menu de navegação com um scroll automático ao clicar nas seções, tem a seção de sobre, que fala um pouco sobre mim, uma seção de habilidades mostrando quais as tecnologias eu conheço, e por ultimo uma seção de meus projetos.
+Olá, seja bem-vindo ao meu repositório "Meu Portfólio"! Como você pode ver, este é o meu portfólio pessoal, e estarei sempre atualizando-o com novos projetos.
+
+Este portfólio conta com animações dinâmicas, onde os elementos aparecem à medida que você rola a página. Há também um menu de navegação com rolagem automática ao clicar nas seções. Entre as seções, você encontrará:
+
+Sobre: Um pouco sobre mim e minha trajetória.
+Habilidades: As tecnologias que conheço e utilizo.
+Projetos: Uma seleção dos meus trabalhos realizados.
+Contato: Onde você pode me enviar uma mensagem, seja por e-mail através de um formulário, ou pelas minhas redes sociais.
+Além disso, há um botão que, ao ser clicado, faz a rolagem automática até a seção inicial.
 
 [<img src="./src/animação-portfólio.gif" alt="gif do desktop">](https://gustavo-gsilva.github.io/portfolio/)
 
