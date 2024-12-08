@@ -1,6 +1,6 @@
 # Repositório Meu Portfólio
 
-Olá, seja bem-vindo ao meu repositório "Meu Portfólio"! Como você pode ver, este é o meu portfólio pessoal, e estarei sempre atualizando-o com novos projetos.
+Olá, seja bem-vindo ao meu repositório "Meu Portfólio"!Como você pode ver, este é o meu portfólio pessoal, e estarei sempre atualizando-o com novos projetos.
 
 Este portfólio conta com animações dinâmicas, onde os elementos aparecem à medida que você rola a página. Há também um menu de navegação com rolagem automática ao clicar nas seções. Entre as seções, você encontrará:
 
