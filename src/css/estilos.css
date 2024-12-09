@@ -432,6 +432,10 @@ body {
     border-radius: 5px;
 }
 
+.secao-contato .container-contato button a {
+    color: var(--primary-color);
+}
+
 .secao-contato .container-contato button:hover {
     border-radius: 20px;
     transition: 0.2s ease-in-out;
