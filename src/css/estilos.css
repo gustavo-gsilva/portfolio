@@ -135,7 +135,7 @@ body {
 }
 
 .sobre .container-foto .sombra-interna {
-    background: linear-gradient(0.25turn, #000000, #101218, #2d2e32f7);
+    background: linear-gradient(0.25turn, #000000, #101218, #2d2e32f7 );
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
 }
