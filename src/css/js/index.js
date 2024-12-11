@@ -1,8 +1,33 @@
-document.addEventListener("DOMContentLoaded", function () {
-    AOS.init({
-        offset: 200,
-        duration: 1200,
-    });
+ScrollReveal().reveal('.reveal-top', {
+    origin: 'top',
+    duration: 1200,
+    distance: '70px',
+    easing: 'ease',
+    reset: true,
+});
+
+ScrollReveal().reveal('.reveal-bottom', {
+    origin: 'bottom',
+    duration: 1200,
+    distance: '70px',
+    easing: 'ease',
+    reset: true,
+});
+
+ScrollReveal().reveal('.reveal-left', {
+    origin: 'left',
+    duration: 1200,
+    distance: '70px',
+    easing: 'ease',
+    reset: true,
+});
+
+ScrollReveal().reveal('.reveal-right', {
+    origin: 'right',
+    duration: 1200,
+    distance: '70px',
+    easing: 'ease',
+    reset: true,
 });
 
 const botaoMostrarProjetos = document.querySelector('.btn-mostrar-projetos');
@@ -15,6 +40,34 @@ botaoMostrarProjetos.addEventListener('click', () => {
     mostrarMaisProjetos();
 
     esconderBotaoMaisProjetos();
+
+    ScrollReveal().reveal('.projetos-ocultos-1', {
+        origin: 'left',
+        duration: 1200,
+        distance: '70px',
+        easing: 'ease',
+    });
+
+    ScrollReveal().reveal('.projetos-ocultos-2', {
+        origin: 'right',
+        duration: 1200,
+        distance: '70px',
+        easing: 'ease'
+    });
+
+    ScrollReveal().reveal('.projetos-ocultos-3', {
+        origin: 'right',
+        duration: 1200,
+        distance: '70px',
+        easing: 'ease'
+    });
+
+    ScrollReveal().reveal('.projetos-ocultos-4', {
+        origin: 'left',
+        duration: 1200,
+        distance: '70px',
+        easing: 'ease'
+    });
 });
 
 botaoEsconderProjetos.addEventListener('click', () => {
@@ -36,13 +89,6 @@ function esconderBotaoMenosProjetos() {
 function mostrarMaisProjetos() {
     projetosInativos.forEach(projetoInativo => {
         projetoInativo.classList.add('ativo');
-
-        var elementosAOS = projetos.querySelectorAll('[data-aos]');
-        elementosAOS.forEach(function (el) {
-            el.classList.remove('aos-animate');
-        });
-
-        AOS.refresh();
     });
 }
 
