@@ -1,35 +1,3 @@
-ScrollReveal().reveal('.reveal-top', {
-    origin: 'top',
-    duration: 1200,
-    distance: '70px',
-    easing: 'ease',
-    reset: true,
-});
-
-ScrollReveal().reveal('.reveal-bottom', {
-    origin: 'bottom',
-    duration: 1200,
-    distance: '70px',
-    easing: 'ease',
-    reset: true,
-});
-
-ScrollReveal().reveal('.reveal-left', {
-    origin: 'left',
-    duration: 1200,
-    distance: '70px',
-    easing: 'ease',
-    reset: true,
-});
-
-ScrollReveal().reveal('.reveal-right', {
-    origin: 'right',
-    duration: 1200,
-    distance: '70px',
-    easing: 'ease',
-    reset: true,
-});
-
 const botaoMostrarProjetos = document.querySelector('.btn-mostrar-projetos');
 const botaoEsconderProjetos = document.querySelector('.btn-esconder-projetos')
 const projetosInativos = document.querySelectorAll('.projeto:not(.ativo)');
@@ -40,34 +8,6 @@ botaoMostrarProjetos.addEventListener('click', () => {
     mostrarMaisProjetos();
 
     esconderBotaoMaisProjetos();
-
-    ScrollReveal().reveal('.projetos-ocultos-1', {
-        origin: 'left',
-        duration: 1200,
-        distance: '70px',
-        easing: 'ease',
-    });
-
-    ScrollReveal().reveal('.projetos-ocultos-2', {
-        origin: 'right',
-        duration: 1200,
-        distance: '70px',
-        easing: 'ease'
-    });
-
-    ScrollReveal().reveal('.projetos-ocultos-3', {
-        origin: 'right',
-        duration: 1200,
-        distance: '70px',
-        easing: 'ease'
-    });
-
-    ScrollReveal().reveal('.projetos-ocultos-4', {
-        origin: 'left',
-        duration: 1200,
-        distance: '70px',
-        easing: 'ease'
-    });
 });
 
 botaoEsconderProjetos.addEventListener('click', () => {
@@ -114,4 +54,74 @@ function verificarSecaoVisivel() {
     }
 };
 
+function initScrollReveal() {
+    if (window.innerWidth > 780) {
+        ScrollReveal().reveal('.reveal-top', {
+            origin: 'top',
+            duration: 1200,
+            distance: '70px',
+            easing: 'ease',
+            reset: true,
+        });
+
+        ScrollReveal().reveal('.reveal-bottom', {
+            origin: 'bottom',
+            duration: 1200,
+            distance: '70px',
+            easing: 'ease',
+            reset: true,
+        });
+
+        ScrollReveal().reveal('.reveal-left', {
+            origin: 'left',
+            duration: 1200,
+            distance: '70px',
+            easing: 'ease',
+            reset: true,
+        });
+
+        ScrollReveal().reveal('.reveal-right', {
+            origin: 'right',
+            duration: 1200,
+            distance: '70px',
+            easing: 'ease',
+            reset: true,
+        });
+
+        botaoMostrarProjetos.addEventListener('click', () => {
+            ScrollReveal().reveal('.projetos-ocultos-1', {
+                origin: 'left',
+                duration: 1200,
+                distance: '70px',
+                easing: 'ease',
+            });
+
+            ScrollReveal().reveal('.projetos-ocultos-2', {
+                origin: 'right',
+                duration: 1200,
+                distance: '70px',
+                easing: 'ease'
+            });
+
+            ScrollReveal().reveal('.projetos-ocultos-3', {
+                origin: 'right',
+                duration: 1200,
+                distance: '70px',
+                easing: 'ease'
+            });
+
+            ScrollReveal().reveal('.projetos-ocultos-4', {
+                origin: 'left',
+                duration: 1200,
+                distance: '70px',
+                easing: 'ease'
+            });
+        });
+    } else {
+        ScrollReveal().destroy();
+    }
+};
+
+window.addEventListener('load', initScrollReveal);
+window.addEventListener('resize', initScrollReveal);
 window.addEventListener('scroll', verificarSecaoVisivel);
