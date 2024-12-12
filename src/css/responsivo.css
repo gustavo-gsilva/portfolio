@@ -42,7 +42,7 @@
         max-width: 750px;
     }
 
-    .home a {
+    .secao-contato a {
         left: 93%;
     }
 
@@ -167,8 +167,16 @@
         display: block;
     }
 
-    .home a {
+    .secao-contato a {
         left: 91%;
+    }
+
+}
+
+@media (max-width: 690px) {
+
+    .projetos .projeto {
+        width: 480px;
     }
 
 }
@@ -190,7 +198,7 @@
         margin-right: 380px;
     }
 
-    .home a {
+    .secao-contato a {
         left: 89%;
     }
 
@@ -201,10 +209,6 @@
     .sobre .texto {
         width: 80%;
         font-size: 2rem;
-    }
-
-    .projetos .projeto {
-        width: 480px;
     }
 
 }
@@ -218,7 +222,7 @@
         max-width: 350px;
     }
 
-    .home a {
+    .secao-contato a {
         left: 88%;
     }
 
@@ -259,7 +263,7 @@
         font-size: 3.3rem;
     }
 
-    .home a {
+    .secao-contato a {
         left: 87%;
     }
 
@@ -313,7 +317,7 @@
         font-size: 2.7rem;
     }
 
-    .home a {
+    .secao-contato a {
         left: 86%;
     }
 
@@ -373,7 +377,7 @@
         font-size: 2.6rem;
     }
 
-    .home a {
+    .secao-contato a {
         left: 85%;
     }
 

@@ -87,7 +87,7 @@ body {
     animation: move 1.6s infinite ease-in-out;
 }
 
-.home a {
+.secao-contato a {
     position: fixed;
     left: 95%;
     bottom: 4%;
@@ -98,7 +98,7 @@ body {
     z-index: 1;
 }
 
-.home a i {
+.secao-contato a i {
     color: var(--secondary-color);
     font-size: 3rem;
 }

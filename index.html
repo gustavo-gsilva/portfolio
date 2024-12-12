@@ -3,14 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gustavo Silva - Portfólio</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
   <link rel="shortcut icon" sizes="32x32" href="./src/imagens/logo-g-icon.ico" type="image/x-icon">
-
-  <script src="https://unpkg.com/scrollreveal"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +19,11 @@
   <link rel="stylesheet" href="./src/css/estilos.css">
   <link rel="stylesheet" href="./src/css/responsivo.css">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-  <header id="home" class="cabecalho reveal-top">
+  <header data-aos="fade-down" id="home" class="cabecalho">
     <a href="#">
       <h1 class="logo">GS</h1>
     </a>
@@ -50,7 +49,7 @@
   </header>
 
   <section class="home">
-    <div class="informacoes reveal-top">
+    <div data-aos="fade-down" class="informacoes">
       <h1>Olá Sou Gustavo Silva</h1>
       <h2>Seja bem-vindo(a) ao meu portfólio!</h2>
     </div>
@@ -58,21 +57,19 @@
     <div class="seta">
       <img src="./src/imagens/seta-para-baixo.png" alt="Seta Para Baixo">
     </div>
-
-    <a class="botao-home" href="#home"><i class="fa-solid fa-up-long"></i></a>
   </section>
 
   <section class="secao-sobre" id="sobre">
-    <h2 class="reveal-right">Sobre</h2>
+    <h2 class="animado" data-aos="fade-left">Sobre</h2>
 
-    <div class="sobre reveal-right">
+    <div data-aos="fade-left" class="sobre">
       <div class="container-foto">
         <div class="foto sombra-interna">
           <img src="./src/imagens/foto de perfil.png" alt="foto do portfólio do Gustavo">
         </div>
       </div>
 
-      <div class="texto reveal-right">
+      <div data-aos="fade-left" class="texto">
         <p>Um desenvolvedor frontend em formação apaixonado por tecnologia.</p>
         <p>
           Estou sempre me desafiando com novos projetos e buscando feedback na
@@ -89,9 +86,9 @@
   </section>
 
   <section class="habilidades" id="habilidades">
-    <h2 class="reveal-bottom">Habilidades</h2>
+    <h2 data-aos="fade-up">Habilidades</h2>
 
-    <div class="tecnologias reveal-bottom">
+    <div data-aos="fade-up" class="tecnologias">
       <div class="tecnologias-info">
         <span><i class="fa-brands fa-html5" title='HTML5'></i></span>
         <h5>HTML5</h5>
@@ -140,10 +137,10 @@
   </section>
 
   <section class="projetos" id="projetos">
-    <h2 class="reveal-left">Projetos</h2>
+    <h2 data-aos="fade-right">Projetos</h2>
 
     <div class="container-projetos">
-      <div class="projeto ativo reveal-left">
+      <div data-aos="fade-right" class="projeto ativo">
         <a href="https://gustavo-gsilva.github.io/GitHub-Com-Fetch-API/" target="_blank">
           <img src="./src/imagens/projeto-fetch-api-github.png" alt="Projeto Fetch API GitHub" />
           <h3>Buscador de Usuários do GitHub</h3>
@@ -180,7 +177,7 @@
         </a>
       </div>
 
-      <div class="projeto ativo reveal-right">
+      <div data-aos="fade-left" class="projeto ativo">
         <a href="https://gerador-de-conselhos-ha3j-8dldzugta.vercel.app/" target="_blank">
           <img src="./src/imagens/gerador-de-conselhos.png" alt="Projeto Gerador de Conselhos" />
           <h3>Gerador de Conselhos</h3>
@@ -216,7 +213,7 @@
         </a>
       </div>
 
-      <div class="projeto ativo reveal-right">
+      <div data-aos="fade-left" class="projeto ativo">
         <a href="https://quest-formul-rio-com-valida-4p5vcdf9j.vercel.app" target="_blank">
           <img src="./src/imagens/formulário-com-validação.png" alt="Projeto Formulário Com Validação" />
           <h3>Formulário Com Validação</h3>
@@ -246,7 +243,7 @@
         </a>
       </div>
 
-      <div class="projeto ativo reveal-left">
+      <div data-aos="fade-right" class="projeto ativo">
         <a href="https://calculadora-de-reembolso-de-hipoteca-f2atrez8k.vercel.app/" target="_blank">
           <img src="./src/imagens/projeto-calculadora-de-hipoteca.png" alt="Projeto Calculadora de Hipoteca" />
           <h3>Calculadora de Hipoteca</h3>
@@ -276,7 +273,7 @@
         </a>
       </div>
 
-      <div class="projeto projetos-ocultos-1">
+      <div data-aos="fade-right" class="projeto">
         <a href="https://landing-page-com-grid-a9b0axb0m.vercel.app/" target="_blank">
           <img src="./src/imagens/landing-page-de-agência.png" alt="Projeto Landing Page de Agência" />
           <h3>Landing Page de Agência</h3>
@@ -300,7 +297,7 @@
         </a>
       </div>
 
-      <div class="projeto projetos-ocultos-2">
+      <div data-aos="fade-left" class="projeto">
         <a href="https://order-summary-component-bqvpxfas7.vercel.app/#" target="_blank">
           <img src="./src/imagens/componente-de-resumo-do-pedido.png" alt="Projeto Componente de Resumo do Pedido" />
           <h3>Componente de Resumo do Pedido</h3>
@@ -324,7 +321,7 @@
         </a>
       </div>
 
-      <div class="projeto projetos-ocultos-3">
+      <div data-aos="fade-left" class="projeto">
         <a href="https://huddle-base-a1pl88wyr-gustavo-silvas-projects-ee807f68.vercel.app/" target="_blank">
           <img src="./src/imagens/base-de-reunião.png" alt="Projeto Base de Reunião" />
           <h3>Base de Reunião</h3>
@@ -348,7 +345,7 @@
         </a>
       </div>
 
-      <div class="projeto projetos-ocultos-4">
+      <div data-aos="fade-right" class="projeto">
         <a href="https://3-column-preview-card-component-main-f5ph48whp.vercel.app/" target="_blank">
           <img src="./src/imagens/componente-principal-de-3-colunas.png"
             alt="Componente Principal do Cartão de Visualização de 3 Colunas" />
@@ -379,10 +376,10 @@
   </section>
 
   <section class="secao-contato" id="contato">
-    <h2 class="reveal-right">Contato</h2>
+    <h2 data-aos="fade-left">Contato</h2>
 
     <div class="flex-contato">
-      <div class="container-contato reveal-right">
+      <div data-aos="fade-left" class="container-contato">
         <h3>Envie sua mensagem</h3>
 
         <form action="https://api.staticforms.xyz/submit" method="post">
@@ -406,24 +403,25 @@
         </form>
       </div>
     </div>
+    <a class="botao-home" href="#home"><i class="fa-solid fa-up-long"></i></a>
   </section>
 
   <section class="secao-rodape">
     <footer class="rodape">
       <ul class="redes-sociais">
-        <li class="reveal-left">
+        <li>
           <a href="https://www.linkedin.com/in/gustavo-silva-564b9a316/" title="Ir para o LinkedIn" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
         </li>
 
-        <li class="reveal-top">
+        <li>
           <a href="https://wa.me/93996533802" title="Enviar Mensagem no WhatsApp" target="_blank">
             <i class="fab fa-whatsapp"></i>
           </a>
         </li>
 
-        <li class="reveal-right">
+        <li>
           <a href="https://github.com/gustavo-gsilva" title="Ir para o GitHub" target="_blank">
             <i class="fab fa-github"></i>
           </a>
@@ -433,7 +431,7 @@
   </section>
 
   <script src="https://kit.fontawesome.com/9707c16123.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./src/css/js/index.js"></script>
 </body>
 

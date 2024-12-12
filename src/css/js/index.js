@@ -6,13 +6,11 @@ botaoEsconderProjetos.classList.add("remover-esconder")
 
 botaoMostrarProjetos.addEventListener('click', () => {
     mostrarMaisProjetos();
-
     esconderBotaoMaisProjetos();
 });
 
 botaoEsconderProjetos.addEventListener('click', () => {
     mostrarMenosProjetos();
-
     esconderBotaoMenosProjetos();
 })
 
@@ -30,6 +28,12 @@ function mostrarMaisProjetos() {
     projetosInativos.forEach(projetoInativo => {
         projetoInativo.classList.add('ativo');
     });
+
+    var elementosAOS = projetos.querySelectorAll('[data-aos]');
+    elementosAOS.forEach(function (el) {
+        el.classList.remove('aos-animate');
+    });
+    AOS.refresh();
 }
 
 function mostrarMenosProjetos() {
@@ -54,74 +58,19 @@ function verificarSecaoVisivel() {
     }
 };
 
-function initScrollReveal() {
-    if (window.innerWidth > 780) {
-        ScrollReveal().reveal('.reveal-top', {
-            origin: 'top',
-            duration: 1200,
-            distance: '70px',
-            easing: 'ease',
-            reset: true,
-        });
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        offset: 200,
+        duration: 1200,
+    });
+});
 
-        ScrollReveal().reveal('.reveal-bottom', {
-            origin: 'bottom',
-            duration: 1200,
-            distance: '70px',
-            easing: 'ease',
-            reset: true,
-        });
+if (window.innerWidth < 700) {
+    AOS.init({
+        disable: true
+    });
+} else {
+    AOS.init();
+}
 
-        ScrollReveal().reveal('.reveal-left', {
-            origin: 'left',
-            duration: 1200,
-            distance: '70px',
-            easing: 'ease',
-            reset: true,
-        });
-
-        ScrollReveal().reveal('.reveal-right', {
-            origin: 'right',
-            duration: 1200,
-            distance: '70px',
-            easing: 'ease',
-            reset: true,
-        });
-
-        botaoMostrarProjetos.addEventListener('click', () => {
-            ScrollReveal().reveal('.projetos-ocultos-1', {
-                origin: 'left',
-                duration: 1200,
-                distance: '70px',
-                easing: 'ease',
-            });
-
-            ScrollReveal().reveal('.projetos-ocultos-2', {
-                origin: 'right',
-                duration: 1200,
-                distance: '70px',
-                easing: 'ease'
-            });
-
-            ScrollReveal().reveal('.projetos-ocultos-3', {
-                origin: 'right',
-                duration: 1200,
-                distance: '70px',
-                easing: 'ease'
-            });
-
-            ScrollReveal().reveal('.projetos-ocultos-4', {
-                origin: 'left',
-                duration: 1200,
-                distance: '70px',
-                easing: 'ease'
-            });
-        });
-    } else {
-        ScrollReveal().destroy();
-    }
-};
-
-window.addEventListener('load', initScrollReveal);
-window.addEventListener('resize', initScrollReveal);
 window.addEventListener('scroll', verificarSecaoVisivel);
