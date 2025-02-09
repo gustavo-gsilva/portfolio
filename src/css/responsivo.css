@@ -18,10 +18,6 @@
         max-width: 900px;
     }
 
-    .cabecalho .logo {
-        margin-right: 0px;
-    }
-
     .sobre .container-foto .foto {
         max-width: 370px;
     }
@@ -69,6 +65,10 @@
         max-width: 600px;
     }
 
+    .cabecalho .menu li a {
+        padding: 10px 25px;
+    }
+
     .home .informacoes h2 {
         text-align: center;
         font-size: 4.3rem;
@@ -91,8 +91,8 @@
         justify-content: space-between;
     }
 
-    .cabecalho .logo {
-        margin-left: 40px;
+    .cabecalho a {
+        margin-left: 30px;
     }
 
     .cabecalho .menu i {
