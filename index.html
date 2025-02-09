@@ -20,24 +20,24 @@
   <link rel="stylesheet" href="./src/css/responsivo.css">
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
+  <div class="overlay"></div>
+
   <header data-aos="fade-down" id="home" class="cabecalho">
     <a href="#">
       <h1 class="logo">GS</h1>
     </a>
 
     <nav class="menu">
-      <input type="checkbox" id="menu-hamburguer">
+      <i id="hamburguer-menu" class="fa-solid fa-bars"></i>
 
-      <label for="menu-hamburguer">
-        <div class="menu">
-          <span class="hamburguer"></span>
-        </div>
-      </label>
+      <ul class="lista-navegacao animate__animated animate__fadeInRight">
+        <i id="fechar-menu" class="fa-solid fa-xmark"></i>
 
-      <ul>
         <li>
           <a href="#sobre">Sobre</a>
           <a href="#habilidades">Habilidades</a>

@@ -1,6 +1,36 @@
 const botaoMostrarProjetos = document.querySelector('.btn-mostrar-projetos');
 const botaoEsconderProjetos = document.querySelector('.btn-esconder-projetos')
 const projetosInativos = document.querySelectorAll('.projeto:not(.ativo)');
+const menuHamburguer = document.getElementById('hamburguer-menu');
+const fecharMenu = document.getElementById('fechar-menu');
+const listaDeNavegacao = document.querySelector('.lista-navegacao');
+const overlay = document.querySelector('.overlay');
+
+function mostrarFundoOverlay() {
+    overlay.style.display = 'block';
+};
+
+function esconderFundoOverlay() {
+    overlay.style.display = 'none';
+};
+
+function mostrarMenu() {
+    listaDeNavegacao.style.display = 'block';
+};
+
+function esconderMenu() {
+    listaDeNavegacao.style.display = 'none';
+};
+
+menuHamburguer.addEventListener('click', () => {
+    mostrarMenu();
+    mostrarFundoOverlay();
+});
+
+fecharMenu.addEventListener('click', () => {
+    esconderMenu();
+    esconderFundoOverlay();
+});
 
 botaoEsconderProjetos.classList.add("remover-esconder")
 

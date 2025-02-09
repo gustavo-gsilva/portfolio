@@ -18,6 +18,10 @@ body {
     background-color: var(--primary-color);
 }
 
+.cabecalho a {
+    width: 65px;
+}
+
 .cabecalho .logo {
     display: flex;
     align-items: center;
@@ -31,10 +35,13 @@ body {
     font-size: 2.5rem;
 }
 
-.cabecalho .menu input {
+.cabecalho .menu i {
+    max-width: 25px;
     display: none;
-    width: 70px;
-    height: 70px;
+    color: var(--secondary-color);
+    font-size: 3rem;
+    cursor: pointer;
+    margin-right: 40px;
 }
 
 .cabecalho .menu li a {
@@ -135,7 +142,7 @@ body {
 }
 
 .sobre .container-foto .sombra-interna {
-    background: linear-gradient(0.25turn, #000000, #101218, #2d2e32f7 );
+    background: linear-gradient(0.25turn, #000000, #101218, #2d2e32f7);
     background-size: 180% 180%;
     animation: gradient-animation 5s ease infinite;
 }
