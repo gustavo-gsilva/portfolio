@@ -57,6 +57,13 @@ body {
     border-radius: 50px;
 }
 
+#download-cv {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
 .home {
     display: flex;
     justify-content: center;

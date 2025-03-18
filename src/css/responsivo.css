@@ -29,6 +29,54 @@
 
 }
 
+@media (max-width: 1040px) {
+
+    .overlay {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--hamburger-menu-overlay);
+        position: fixed;
+        display: none;
+        z-index: 99;
+    }
+
+    .cabecalho {
+        justify-content: space-between;
+        padding: 25px 0 25px 40px;
+    }
+
+    .cabecalho .menu i {
+        display: block;
+    }
+
+    .cabecalho nav ul {
+        width: 50vw;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: var(--primary-color);
+        padding: 30px 0 0 0;
+        display: none;
+        z-index: 100;
+    }
+
+    .cabecalho nav ul i {
+        margin-left: 30px;
+    }
+
+    .cabecalho nav ul li {
+        padding-top: 20px;
+    }
+
+    .cabecalho nav ul li a {
+        width: 200px;
+        display: block;
+        margin-left: 7px;
+    }
+
+}
+
 @media (max-width: 990px) {
 
     .secao-sobre h2,
@@ -78,60 +126,13 @@
 
 @media (max-width: 760px) {
 
-    .overlay {
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--hamburger-menu-overlay);
-        position: fixed;
-        display: none;
-        z-index: 99;
-    }
-
     .cabecalho {
         justify-content: space-between;
-    }
-
-    .cabecalho a {
-        margin-left: 30px;
-    }
-
-    .cabecalho .menu i {
-        display: block;
-    }
-
-    .cabecalho nav ul {
-        width: 50vw;
-        height: 100vh;
-        position: fixed;
-        right: 0;
-        top: 0;
-        background-color: var(--primary-color);
-        padding: 30px 0 0 0;
-        display: none;
-        z-index: 100;
-    }
-
-    .cabecalho nav ul i {
-        margin-left: 30px;
-    }
-
-    .cabecalho nav ul li {
-        padding-top: 20px;
-    }
-
-    .cabecalho nav ul li a {
-        width: 200px;
-        display: block;
-        margin-left: 7px;
     }
 
     .cabecalho .menu li a:hover {
         background-color: transparent;
         color: var(--secondary-color);
-    }
-
-    .secao-contato a {
-        left: 91%;
     }
 
 }
@@ -174,6 +175,11 @@
 
 @media (max-width: 530px) {
 
+    .cabecalho {
+        justify-content: space-between;
+        padding: 25px 0 25px 30px;
+    }
+
     .secao-sobre h2,
     .habilidades h2,
     .projetos h2,
@@ -212,6 +218,10 @@
 
     .cabecalho .logo {
         margin-right: 290px;
+    }
+
+    #download-cv {
+        width: 160px;
     }
 
     .home .informacoes h1 {
@@ -257,6 +267,10 @@
     .projetos h2,
     .secao-contato h2 {
         max-width: 300px;
+    }
+
+    #download-cv {
+        width: 130px;
     }
 
     .cabecalho nav ul i {
