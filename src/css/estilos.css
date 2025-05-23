@@ -299,6 +299,9 @@ body {
 }
 
 .projetos .projeto .tecnologias-projeto .nome-das-tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -308,7 +311,15 @@ body {
     bottom: 5px;
 }
 
-.projetos .projeto .tecnologias-projeto .nome-das-tecnologias .api {
+.projetos .projeto .tecnologias-projeto .nome-das-tecnologias .logo-styled-components {
+    width: 53px;
+    position: relative;
+    bottom: 5px;
+    filter: invert(100%);
+}
+
+.projetos .projeto .tecnologias-projeto .nome-das-tecnologias .api,
+.projetos .projeto .tecnologias-projeto .nome-das-tecnologias .styled-components {
     position: relative;
     bottom: 13px;
 }
