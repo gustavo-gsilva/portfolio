@@ -318,6 +318,12 @@ body {
     filter: invert(100%);
 }
 
+.projetos .projeto .tecnologias-projeto .nome-das-tecnologias .logo-tailwindcss {
+    position: relative;
+    bottom: 5px;
+    padding-bottom: 5px;
+}
+
 .projetos .projeto .tecnologias-projeto .nome-das-tecnologias .api,
 .projetos .projeto .tecnologias-projeto .nome-das-tecnologias .styled-components {
     position: relative;
